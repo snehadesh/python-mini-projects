@@ -1,3 +1,4 @@
+#this program is to get top 10 news of your area of interest from the website of times of india.
 import requests
 from bs4 import BeautifulSoup
 
