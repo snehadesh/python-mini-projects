@@ -1,3 +1,4 @@
+#this program is to get blogs with links from medium.com 
 import requests
 from bs4 import BeautifulSoup
 
@@ -10,10 +11,8 @@ page = requests.get(URL)
 soup = BeautifulSoup(page.content,'html.parser')
 results = soup.find_all('div',class_="postArticle-content")
 link_of = soup.find_all("a", href=True)
-# print(results)
 list_of = []
 for blog in results:
-    #print(blog, end='\n'*2)
     blog_list= blog.find('h3')
     list_of.append(blog_list)
 n = 1    
