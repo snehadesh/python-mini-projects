@@ -2,9 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 country = input("Enter the country name- ")
-
 url = 'https://www.worldometers.info/coronavirus/country/'  + country + '/'
  
 page = requests.get(url)
